@@ -38,8 +38,6 @@ function NarrowItDownController(MenuSearchService){
 	var service = MenuSearchService;
 
 	narrow.getMatchedMenuItems = function(searchTerm){
-		console.log(searchTerm)
-		console.log(typeof	searchTerm)
 		if ((typeof searchTerm) == 'undefined') {
 			 narrow.noresults = true;
 			 searchTerm = searchTerm ?? '';
@@ -57,7 +55,6 @@ function NarrowItDownController(MenuSearchService){
 		    	}
 		    }
 		  }
-	    console.log('length: ',foundItems.length)
 	    // return processed items
 	    if (foundItems.length == 0){
 	    	narrow.noresults = true;
