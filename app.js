@@ -50,7 +50,7 @@ function NarrowItDownController(MenuSearchService){
 	    var foundItems = [];
 	    if (searchTerm != ''){
 	    	for (var i=0; i < result_arr.length; i++){
-		    	if (result_arr[i].name.toUpperCase().includes(searchTerm.toUpperCase())) {
+		    	if (result_arr[i].description.toUpperCase().includes(searchTerm.toUpperCase())) {
 		    		foundItems.push(result_arr[i]);
 		    	}
 		    }
